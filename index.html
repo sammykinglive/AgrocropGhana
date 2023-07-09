@@ -25,7 +25,7 @@
 
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <title>Agrocrop</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -37,7 +37,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="#">
-              <img src="images/logo 2.png" alt="Logo">
+              <img src="images/logo 2.png" data-aos="zoom-in" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,13 +74,22 @@
           <img class="slideshow-image" src="images/img 4.jpg" alt="Image 3">
           <img class="slideshow-image" src="images/img 3.jpg" alt="Image 3">
           <img class="slideshow-image" src="images/img 6.jpg" alt="Image 3">
-          <div class="caption"> 
-            <h1>
-                Agrocrop Ghana <i class="icon fas fa-leaf"></i>
-            </h1>
-            <p>
+          
+          <div class="caption" > 
+            
+            <div class="caption-header" data-aos="fade-left">
+              <h1>
+                Agrocrop Ghana <i class="icon fas fa-leaf" data-aos="zoom-in"></i> 
+            </h1 >
+            </div>
+            
+            <div class="caption-p" data-aos="fade-right">
+              <p>
                 Empowering farmers and driving sustainable growth  through innovative agro-commodity trading solutions.
             </p>
+            </div>
+           
+           
           </div>
         </div>
       </section>
@@ -89,7 +98,7 @@
     
    
       <section class="about-section">
-        <div class="grid-item item1">
+        <div class="grid-item item1" data-aos="fade-up">
           <h1>About Us</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est rerum aut nesciunt nisi illum officia, eveniet placeat nulla laboriosam quam cumque nihil dolorum blanditiis voluptatibus enim. Odit voluptate ipsum consequatur!
@@ -102,14 +111,14 @@
             <i class="icon fas fa-industry"></i>
           </div>
         </div>
-        <div class="grid-item item2">
+        <div class="grid-item item2" data-aos="zoom-in">
           <img src="images/nnnnnn.jpg" alt="Image 1">
         </div>
-        <div class="grid-item item3">
+        <div class="grid-item item3" data-aos="zoom-in">
             <img src="images/img 5.jpg" alt="Image 2">
           
         </div>
-        <div class="grid-item item4">
+        <div class="grid-item item4" data-aos="fade-up">
           <h2>Our Services</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         
@@ -149,14 +158,14 @@
 
 <section class="product-section">
 
-  <div class="product-heading">
+  <div class="product-heading" data-aos="fade-up">
     <h1>Agro-commodities Trading</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officia qui dignissimos. Adipisci, inventore officia? Assumenda quos earum deserunt facilis tenetur aperiam laudantium non blanditiis. Dolores dolor vel cumque iure?</p>
   </div>
 
   <div class="product-grid-container" id="product-grid-container">
 
-    <div class="product-grid" id="product-grid">
+    <div class="product-grid" id="product-grid" data-aos="fade-left">
 
       <div class="product-grid-item" >
       
@@ -231,48 +240,25 @@
 
 
 
-
-<section class="contact-section" id="contact-section">
-  <div class="contact-content">
-    
-    <div class="contact-heading">
-      <h1>Contact Us</h1>
-      <p>Lorem porro tenetur quisquam distinctio illo a ratione corrupti provident quaerat aliquam inventore doloribus recusandae, odit optio quis soluta nobis.</p>
-    </div>
-
-    <div class="contact-video">
-      <video src="videos/pexels-gabby-k-5849646 (1080p).mp4" autoplay loop muted></video>
-
-    </div>
-
+<section class="partners-section">
+  <div class="partners-heading" data-aos="zoom-in">
+    <h2>Our Partners</h2>
   </div>
   
-  <div class="contact-form">
-    <form action="/submit-contact-form" method="POST">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      
-      <div class="form-group">
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-      </div>
-      
-      <div class="form-group">
-        <label for="request">Request:</label>
-        <textarea id="request" name="request" required></textarea>
-      </div>
-      
-      <div class="form-group">
-        <input type="submit" value="Submit">
-      </div>
-    </form>
+  <div class="partners-container">
+    <div class="partner" data-aos="fade-right">
+      <img src="images/gcx-logo-high.jpg" alt="Partner 1">
+    </div>
+    
+    <div class="partner" data-aos="zoom-in">
+      <img src="images/asco.jpg" alt="Partner 2">
+    </div>
+    
+    <div class="partner"data-aos="fade-left">
+      <img src="images/IDL-FEDCO-LOGO.png" alt="Partner 3">
+    </div>
+    
+    <!-- Add more partner divs as needed -->
   </div>
 </section>
 
@@ -284,6 +270,83 @@
 
 
 
+
+<section class="contact-section" id="contact-section" >
+  <div class="contact-content">
+    
+    <div class="contact-heading" data-aos="fade-up">
+      <h1>Contact Us <i class="far fa-envelope"></i> </h1>
+      <p>Lorem porro tenetur quisquam distinctio illo a ratione corrupti provident quaerat aliquam inventore doloribus recusandae, odit optio quis soluta nobis.</p>
+    </div>
+
+    <div class="contact-video">
+      <video src="videos/pexels-gabby-k-5849646 (1080p).mp4" autoplay loop muted></video>
+
+    </div>
+
+  </div>
+  
+  <div class="contact-form" data-aos="fade-up">
+    <form action="/submit-contact-form" method="POST">
+      <div class="form-group">
+        <label for="name"> <i class="fas fa-user"></i> Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email"> <i class="far fa-envelope"></i> Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="phone"> <i class="fas fa-phone"></i> Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="request"> <i class="fas fa-comment"></i> Request:</label>
+        <textarea id="request" name="request" required></textarea>
+      </div>
+      
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    
+  </div>
+</section>
+
+
+
+
+
+
+<footer class="footer-section">
+  <div class="footer-content">
+    <div class="footer-logo" data-aos="zoom-in">
+      <img src="images/logo 2.png" alt="Logo">
+    </div>
+    
+    <div class="footer-links" data-aos="fade-up">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom" data-aos="fade-up">
+    <p>&copy; 2023 Agrocrop Ghana.</p>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
 
 
 
@@ -312,7 +375,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
   <script src="script.js"></script>
 </body>

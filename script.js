@@ -79,6 +79,7 @@ function animateItems(target) {
 
 
 
-
-
-
+AOS.init({
+  duration: 1500, // Animation duration (in milliseconds)
+  once: true, // Animation will trigger only once
+});

@@ -8,7 +8,7 @@
 
 /* Custom styles for the header */
   .header {
-    background-color: #f8f9fa;
+    background-color: #ffffff !important;
     padding: 0 50px;
   }
   
@@ -21,8 +21,8 @@
     font-weight: bold;
     margin-left: 10px;
     padding: 6px 12px;
-    background-color: #22817d;
-    border-radius: 20px;
+    background-color: #1cb438;
+    border-radius: 10px;
   }
   
   .navbar-nav {
@@ -35,6 +35,7 @@
   
   .navbar-nav .nav-link {
     color: #333;
+    font-weight: bold;
   }
   
   .navbar-nav .nav-link:hover {
@@ -167,7 +168,7 @@
   }
 
   .caption h1 i{
-    color: #0cce26;
+    color: #1cb438;
   }
 
   .caption p{
@@ -195,15 +196,15 @@
     .caption h1{
         color: #fff;
         text-align: left;
-        font-size: 28px;
+        font-size: 35px;
         font-weight: bold;
       }
     
       .caption p{
         color: #fff;
         text-align: left;
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 19px;
+        
       }
 
 
@@ -249,7 +250,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 50px 150px;
-    
+    font-family: 'Baloo 2', cursive;
   }
   
   .grid-item {
@@ -261,6 +262,7 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: rgb(44, 44, 44);
   }
   
   .item1 p {
@@ -271,7 +273,7 @@
   .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #22817d;
+    background-color: #1cb438;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -288,7 +290,7 @@
 
   .about-icons i{
     font-size: 40px;
-    color: #22817d;
+    color: #1cb438;
     
   }
   
@@ -303,6 +305,7 @@
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #242423;
   }
   
   .item4 p {
@@ -342,7 +345,7 @@
   
   .product-card i {
     margin-right: 10px;
-    
+    color: #4b4802;
   }
   
   .product-text {
@@ -522,7 +525,7 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 150px;
-  background-color: #22817d;
+  background-color: #6c8070;
   overflow: hidden;
   font-family: 'Baloo 2', cursive;
 }
@@ -575,7 +578,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #ffffffa1;
+  background-color: #ffffffbe;
   padding: 20px ;
   border-radius: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.171);
@@ -638,7 +641,7 @@
   display: block; /* Change display to block */
   margin: 0 auto; /* Add auto margin to horizontally center */
   padding: 4px 20px;
-  background-color: #22817d;
+  background-color: #1cb438;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -712,6 +715,7 @@
   .card-image img {
     max-width: 80px;
     height: 80px;
+    margin-right: 10px;
   }
 
   .product-grid-item p {
@@ -722,14 +726,115 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.partners-section {
+  padding: 50px ;
+  background-color: #ffffff;
+}
+
+.partners-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.partners-heading h2 {
+  color: #333;
+}
+
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner {
+  padding: 20px;
+}
+
+.partner img {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .partners-section {
+    padding: 20px;
+    
+  }
+
+  .partners-heading {
+    margin-bottom: 10px;
+  }
+
+  .partners-container {
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .partner {
+    width: 30%;
+    padding: 10px;
+  }
+
+  .partner img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .partners-heading h2 {
+    color: #333;
+    font-size: 22px
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contact-section {
   display: flex;
   justify-content: space-around;
   padding: 50px 150px;
   font-family: 'Baloo 2', cursive;
-
+  height: 650px;
   opacity: 1; /* Initially set opacity to 0 */
   transition: opacity 0.5s ease-in-out; /* Add transition for smooth fade-in effect */
+  overflow: hidden; /* Hide any overflowing content */
 }
 
 .contact-section.fade-in {
@@ -741,7 +846,11 @@
   flex: 1;
   width: 400px;
 
+}
 
+.contact-heading i {
+  color: #F9F00F;
+  margin-left: 10px;
 }
 
 .contact-heading h1{
@@ -762,8 +871,11 @@ text-align: left;
   text-align: center;
   background-color: #79B1C5;
   padding: 20px;
-border-radius: 10px;
-width: 600px;
+  border-radius: 10px;
+  width: 500px;
+  height: 100%; /* Make the contact content div occupy the full height */
+  
+
 }
 
 .contact-video {
@@ -788,19 +900,28 @@ width: 600px;
 .contact-form {
   flex: 1;
   margin-left: 20px; /* Add margin to create spacing between the divs */
-  padding: 20px;
+  padding: 30px;
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 20px 20px 8px rgba(121, 177, 197, 1);
+  height: 100%; /* Make the contact content div occupy the full height */
+  
 }
+
 
 .contact-form form {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 1px;
+  margin-bottom: 20px;
 }
 
 .contact-form label {
   font-weight: bold;
+}
+
+.contact-form label i{
+  color: #1cb438;
+  margin-right: 10px;
 }
 
 .contact-form input[type="text"],
@@ -819,7 +940,7 @@ width: 600px;
 
 .contact-form input[type="submit"] {
   padding: 10px 20px;
-  background-color: #22817d;
+  background-color: #1cb438;
   color: white;
   border: none;
   border-radius: 3px;
@@ -833,23 +954,27 @@ width: 600px;
 }
 
 
-
+.contact-form h3{
+  font-size: 18px;
+}
 
 
 @media screen and (max-width: 767px) {
-  
-  .contact-section{
+
+  .contact-section {
     display: flex;
     flex-direction: column;
     padding: 10px;
     margin-top: 50px;
+    height: auto; /* Reset height for smaller screens */
+    overflow: visible; /* Reset overflow property */
   }
-  
-  
+
   .contact-content {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto; /* Reset height for smaller screens */
   }
 
   .contact-heading {
@@ -857,8 +982,6 @@ width: 600px;
     text-align: center;
     width: 100%;
   }
-
-  
 
   .contact-video {
     position: relative;
@@ -880,24 +1003,137 @@ width: 600px;
   .contact-form {
     width: 100%;
     margin: 0;
+    height: auto; /* Reset height for smaller screens */
+    box-shadow: none;
   }
 
   .contact-form form {
     display: grid;
     grid-gap: 2px;
+    margin-bottom: 0; /* Reset margin-bottom for smaller screens */
   }
-  
 }
+
+
 
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Adjustments for tablets (e.g., iPad Air, iPad Mini) */
 
   .contact-section{
     
-    padding: 50px 10px;
+    padding: 50px 20px;
     
   }
   
+  .contact-content {
+    
+    width: 400px;
+    height: auto; /* Reset height for smaller screens */
+  }
 
+  .contact-heading {
+    
+    text-align: center;
+    width: 100%;
+  }
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-section {
+  background-color: #333;
+  color: #fff;
+  padding: 100px 100px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .footer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 50px;
+  }
+  
+  
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    margin-bottom: 20px;
+    max-width: 200px;
+  }
+
+  .footer-links ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+  }
 }
 
