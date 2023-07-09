@@ -722,5 +722,182 @@
 
 
 
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 150px;
+  font-family: 'Baloo 2', cursive;
 
+  opacity: 1; /* Initially set opacity to 0 */
+  transition: opacity 0.5s ease-in-out; /* Add transition for smooth fade-in effect */
+}
+
+.contact-section.fade-in {
+  opacity: 1; /* Set opacity to 1 for fade-in effect */
+}
+
+
+.contact-heading {
+  flex: 1;
+  width: 400px;
+
+
+}
+
+.contact-heading h1{
+color: white;
+text-align: left;
+}
+
+.contact-heading p{
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  }
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #79B1C5;
+  padding: 20px;
+border-radius: 10px;
+width: 600px;
+}
+
+.contact-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Set aspect ratio (16:9) for responsive video */
+  overflow: hidden;
+}
+
+.contact-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.contact-form {
+  flex: 1;
+  margin-left: 20px; /* Add margin to create spacing between the divs */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 20px 20px 8px rgba(121, 177, 197, 1);
+}
+
+.contact-form form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #79B1C5;
+  border-radius: 3px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #22817d;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  
+  .contact-section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contact-heading {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  
+
+  .contact-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Set aspect ratio (16:9) for responsive video */
+    overflow: hidden;
+  }
+
+  .contact-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-form form {
+    display: grid;
+    grid-gap: 2px;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Adjustments for tablets (e.g., iPad Air, iPad Mini) */
+
+  .contact-section{
+    
+    padding: 50px 10px;
+    
+  }
+  
+
+}
 
