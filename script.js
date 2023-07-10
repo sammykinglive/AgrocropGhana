@@ -77,9 +77,16 @@ function animateItems(target) {
 
 
 
-
+// animate on scroll
 
 AOS.init({
   duration: 1500, // Animation duration (in milliseconds)
   once: true, // Animation will trigger only once
 });
+
+
+
+
+
+// mobile display scroll for other-product
+
